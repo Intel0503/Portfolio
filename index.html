@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zero portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="CATS.jpg" />
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Loading bar -->
+    <div class="loading-bar"></div>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header/Navigation -->
+    <nav class="fixed w-full bg-gray-800/95 backdrop-blur-sm shadow-lg z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-400">Z3R0</h1>
+            <div class="flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-300 hover:text-indigo-400 transition-colors text-sm">Home</a>
+                <a href="#about"
+                    class="nav-link text-gray-300 hover:text-indigo-400 transition-colors text-sm">About</a>
+                <a href="#skills"
+                    class="nav-link text-gray-300 hover:text-indigo-400 transition-colors text-sm">Skills</a>
+                <a href="#projects"
+                    class="nav-link text-gray-300 hover:text-indigo-400 transition-colors text-sm">Projects</a>
+                <a href="#contact"
+                    class="nav-link text-gray-300 hover:text-indigo-400 transition-colors text-sm">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen relative overflow-hidden bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute animate-float1 opacity-10 top-20 left-20 w-72 h-72 bg-indigo-500 rounded-full filter blur-3xl">
+            </div>
+            <div
+                class="absolute animate-float2 opacity-10 bottom-20 right-20 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl">
+            </div>
+            <div
+                class="absolute animate-float3 opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500 rounded-full filter blur-3xl">
+            </div>
+        </div>
+
+        <!-- Particle effect container -->
+        <div id="particles-js" class="absolute inset-0"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex items-center justify-center min-h-screen">
+            <div class="text-center px-4">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Hi, I'm <span
+                        class="text-indigo-400 typed"></span></h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8">A Fresh Graduate who seek his first job.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#contact"
+                        class="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors transform hover:scale-105">Get
+                        in Touch</a>
+                    <a href="#projects"
+                        class="bg-transparent border-2 border-indigo-400 text-indigo-400 px-8 py-3 rounded-full hover:bg-indigo-400 hover:text-white transition-colors transform hover:scale-105">View
+                        Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900 relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute animate-float2 opacity-5 top-1/4 -left-20 w-96 h-96 bg-indigo-500 rounded-full filter blur-3xl">
+            </div>
+            <div
+                class="absolute animate-float1 opacity-5 bottom-1/4 -right-20 w-80 h-80 bg-purple-500 rounded-full filter blur-3xl">
+            </div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto slide-in-left">
+                <h2 class="text-3xl font-bold text-center mb-8 text-indigo-400">About Me</h2>
+                <p class="text-gray-300 mb-6">A student who admire challenges despite of difficulty..</p>
+                <p class="text-gray-300">I'm no one. That's all.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800 relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute animate-float3 opacity-5 top-1/3 left-1/3 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl">
+            </div>
+            <div
+                class="absolute animate-float1 opacity-5 bottom-1/3 right-1/3 w-64 h-64 bg-indigo-500 rounded-full filter blur-3xl">
+            </div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-400 fade-in-up">My Technical Skills</h2>
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-center">
+                <!-- HTML -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fab fa-html5 text-4xl md:text-5xl mb-2 text-orange-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">HTML</span>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fab fa-css3-alt text-4xl md:text-5xl mb-2 text-blue-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">CSS</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fab fa-js text-4xl md:text-5xl mb-2 text-yellow-400 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- PHP -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fab fa-php text-4xl md:text-5xl mb-2 text-purple-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">PHP</span>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fas fa-database text-4xl md:text-5xl mb-2 text-blue-400 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- GitHub Desktop -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fab fa-github text-4xl md:text-5xl mb-2 text-gray-300 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">GitHub Desktop</span>
+                    </div>
+                </div>
+
+                <!-- Power BI -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fas fa-chart-bar text-4xl md:text-5xl mb-2 text-yellow-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">Power BI</span>
+                    </div>
+                </div>
+
+                <!-- VS Code -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fas fa-code text-4xl md:text-5xl mb-2 text-blue-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Bootstrap 5 -->
+                <div class="skill-icon-card group">
+                    <div
+                        class="flex flex-col items-center p-4 bg-gray-900 rounded-xl hover:bg-gray-800 transition-all duration-300">
+                        <i
+                            class="fab fa-bootstrap text-4xl md:text-5xl mb-2 text-purple-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-sm text-gray-300">Bootstrap 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900 relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute animate-float1 opacity-5 -top-20 left-1/4 w-80 h-80 bg-purple-500 rounded-full filter blur-3xl">
+            </div>
+            <div
+                class="absolute animate-float2 opacity-5 bottom-0 right-1/4 w-96 h-96 bg-indigo-500 rounded-full filter blur-3xl">
+            </div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-400 fade-in-up">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./assets/Chocolate_Sales.png" alt="Project 1"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Default</h3>
+                        <p class="text-gray-300 mb-4 line-clamp-2">A brief description of your project that will be
+                            truncated after two lines. Click for more details.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">HTML</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">CSS</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">JavaScript</span>
+                        </div>
+                        <button onclick="openProjectModal('project1')"
+                            class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./assets/Finance_Dash.PNG" alt="Project 2"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Default</h3>
+                        <p class="text-gray-300 mb-4 line-clamp-2">Another project description that showcases your
+                            skills and implementation details.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">PHP</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">Bootstrap</span>
+                        </div>
+                        <button onclick="openProjectModal('project2')"
+                            class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./assets/DMS.png" alt="Project 3"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Discipline Management System for K-12
+                            Students.</h3>
+                        <p class="text-gray-300 mb-4 line-clamp-2">A system that manage reports of students violation
+                            within Asia Technological School of Science and Arts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">Front-end</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">MySql</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-indigo-400">Back-end</span>
+                        </div>
+                        <button onclick="openProjectModal('project3')"
+                            class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors">View
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-gray-800 rounded-lg max-w-2xl w-full mx-4 overflow-hidden">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-white"></h3>
+                    <button onclick="closeProjectModal()" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div id="modalContent" class="prose prose-invert max-w-none">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+                <div class="mt-6 flex justify-end">
+                    <button onclick="closeProjectModal()"
+                        class="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600 transition-colors">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute animate-float2 opacity-5 top-0 left-1/2 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl">
+            </div>
+            <div
+                class="absolute animate-float3 opacity-5 bottom-1/4 -left-20 w-80 h-80 bg-indigo-500 rounded-full filter blur-3xl">
+            </div>
+        </div>
+
+        <!-- Particles container -->
+        <div id="contact-particles" class="absolute inset-0"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-400 fade-in-up">Get in Touch</h2>
+
+            <!-- Social Media Links -->
+            <div class="flex justify-center items-center space-x-8 mb-12">
+                <a href="https://github.com/Intel0503" target="_blank" rel="noopener noreferrer"
+                    class="social-icon-link group">
+                    <div
+                        class="bg-gray-900 p-4 rounded-full transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:shadow-indigo-500/20">
+                        <i
+                            class="fab fa-github text-3xl text-gray-300 group-hover:text-indigo-400 transition-colors"></i>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block text-center group-hover:text-indigo-400">GitHub</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jeffrey-mercado-842045335" target="_blank"
+                    rel="noopener noreferrer" class="social-icon-link group">
+                    <div
+                        class="bg-gray-900 p-4 rounded-full transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:shadow-indigo-500/20">
+                        <i
+                            class="fab fa-linkedin-in text-3xl text-gray-300 group-hover:text-indigo-400 transition-colors"></i>
+                    </div>
+                    <span
+                        class="text-sm text-gray-400 mt-2 block text-center group-hover:text-indigo-400">LinkedIn</span>
+                </a>
+
+                <a href="mailto:your.email@example.com" class="social-icon-link group">
+                    <div
+                        class="bg-gray-900 p-4 rounded-full transition-all duration-300 hover:bg-gray-700 hover:shadow-lg hover:shadow-indigo-500/20">
+                        <i
+                            class="fas fa-envelope text-3xl text-gray-300 group-hover:text-indigo-400 transition-colors"></i>
+                    </div>
+                    <span class="text-sm text-gray-400 mt-2 block text-center group-hover:text-indigo-400">Email</span>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+
+</html>

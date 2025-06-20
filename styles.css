@@ -1,0 +1,342 @@
+/* Custom styles */
+.skill-icon-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-icon-card:hover {
+    transform: translateY(-5px);
+}
+
+.typed {
+    color: #818cf8;
+}
+
+/* Hero section animations */
+@keyframes float1 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-20px, 20px);
+    }
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, -20px);
+    }
+}
+
+@keyframes float3 {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.animate-float1 {
+    animation: float1 8s ease-in-out infinite;
+}
+
+.animate-float2 {
+    animation: float2 12s ease-in-out infinite;
+}
+
+.animate-float3 {
+    animation: float3 10s ease-in-out infinite;
+}
+
+/* Section animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Project card hover effects */
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -5px rgba(79, 70, 229, 0.3);
+}
+
+.project-card img {
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #818cf8, #6366f1);
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1f2937;
+    border: 2px solid #818cf8;
+    color: #818cf8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: #818cf8;
+    color: #1f2937;
+}
+
+/* Form styling */
+input, textarea {
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #e5e7eb;
+}
+
+input:focus, textarea:focus {
+    background: #374151;
+    border-color: #818cf8;
+}
+
+/* Contact form animations */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1f2937;
+    padding: 0 0.5rem;
+    color: #9ca3af;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.875rem;
+    color: #818cf8;
+}
+
+/* Navigation highlight effect */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #818cf8;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Loading animation */
+.loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #818cf8, #6366f1);
+    transform: translateX(-100%);
+    animation: loading 1.5s ease-in-out infinite;
+    z-index: 1000;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Smooth transitions */
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.transition-colors {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Social media icons animations */
+.social-icon-link {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon-link div {
+    position: relative;
+}
+
+.social-icon-link div::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(45deg, #818cf8, #6366f1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icon-link:hover div::after {
+    opacity: 0.15;
+}
+
+/* Pulse animation for social icons */
+@keyframes social-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+    }
+}
+
+.social-icon-link:hover div {
+    animation: social-pulse 1.5s infinite;
+}
+
+/* Contact form focus effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+    background: rgba(31, 41, 55, 0.8);
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+    text-shadow: 0 0 8px rgba(129, 140, 248, 0.5);
+}
+
+/* Submit button pulse effect */
+@keyframes button-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(99, 102, 241, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+    }
+}
+
+form button[type="submit"] {
+    position: relative;
+    overflow: hidden;
+}
+
+form button[type="submit"]:hover {
+    animation: button-pulse 2s infinite;
+}
+
+form button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: rgba(129, 140, 248, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-out;
+}
+
+form button[type="submit"]:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .skill-icon-card i {
+        font-size: 2.5rem;
+    }
+}
